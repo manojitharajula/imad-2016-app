@@ -2,7 +2,12 @@ console.log('DOne!');
 var element=document.getElementById('main-text');
 element.innerHTML='changeD';
 var img=document.getElementById('image');
+var marginLeft=0;
+moveRight(){
+    magrinLeft=marginLeft+10;
+    img.style.marginLeft=marginLeft+'px';
+}
 img.onclick = function(){
-    img.style.marginLeft='1000px'
-    img.style.marginRight='100px'
+    var Interval=setInterval(moveRight,10);
+    
 } 
